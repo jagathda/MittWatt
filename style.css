@@ -1,0 +1,117 @@
+*{
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    padding: 0 20px; /* Add padding for space on left and right */
+    background-image: url('./images/lightning.jpg');  /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    position: relative; /* Allow positioning of the overlay */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px; /* Padding for left and right */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: absolute;
+    top: 0;
+    height: 60px;
+}
+
+.navbar-left {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffb00;;
+    letter-spacing: 3px
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-right a:hover {
+    color: #fffb00;
+}
+
+/* Main content styles */
+.content {
+    text-align: center;
+    max-width: 800px; /* Set a maximum width for the content */
+    width: 100%; /* Full width */
+    padding: 20px; /* Optional padding for content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-weight: bolder;
+    font-size: larger;
+    color: #000000;
+}
+
+.text {
+    color: #000000;
+}
+
+.subscription-button {
+    display: inline-block;
+    background-color: #fffb00; /* Light yellow color */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.subscription-button:hover {
+    background-color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.input-button {
+    color: #000000;
+    background-color: #fffb00;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.input-button:hover {
+    background-color: #ffffff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: 50px;
+}
