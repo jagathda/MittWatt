@@ -8,13 +8,13 @@
 
     <script>
         // define the callAPI function that takes a first name and last name as parameters
-        var callAPI = (firstName, lastName) => {
+        var callAPI = (temperature, electricityPrice) => {
             // instantiate a headers object
             var myHeaders = new Headers();
             // add content type header to object
             myHeaders.append("Content-Type", "application/json");
             // using built in JSON utility package turn object to string and store in a variable
-            var raw = JSON.stringify({ "firstName": firstName, "lastName": lastName });
+            var raw = JSON.stringify({ "firstName": temperature, "lastName": electricityPrice });
             // create a JSON object with parameters for API call and store in a variable
             var requestOptions = {
                 method: 'POST',
