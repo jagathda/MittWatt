@@ -14,7 +14,7 @@
             // add content type header to object
             myHeaders.append("Content-Type", "application/json");
             // using built in JSON utility package turn object to string and store in a variable
-            var raw = JSON.stringify({ "temperature": temperature, "electricityPrice": electricityPrice });
+            var raw = JSON.stringify({ "firstName": temperature, "lastName": electricityPrice });
             // create a JSON object with parameters for API call and store in a variable
             var requestOptions = {
                 method: 'POST',
@@ -57,12 +57,12 @@
     </div>
     <form>
         <label>Temperature</label>
-        <input type="text" id="temperature">
+        <input type="text" id="fName">
         <label>Electricity Price</label>
-        <input type="text" id="electricityPrice">
+        <input type="text" id="lName">
         <!-- set button onClick method to call function we defined passing input values as parameters -->
         <button type="button" class="input-button"
-            onclick="callAPI(document.getElementById('temperature').value,document.getElementById('electricityPrice').value)">Call
+            onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call
             API</button>
     </form>
 
