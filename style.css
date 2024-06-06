@@ -115,3 +115,7 @@ footer {
     box-sizing: border-box; /* Include padding in width calculation */
     height: 50px;
 }
+
+input[type="text"] {
+    color: #000000; /* Set text color to black */
+}
