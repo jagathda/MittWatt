@@ -19,6 +19,9 @@ body {
     position: relative; /* Allow positioning of the overlay */
 }
 
+h1 {
+    color: green;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
